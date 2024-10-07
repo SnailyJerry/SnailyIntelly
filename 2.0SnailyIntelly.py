@@ -1,6 +1,6 @@
 import streamlit as st
 import time
-import OpenAI
+from openai import OpenAI
 import random
 from PIL import Image
 
