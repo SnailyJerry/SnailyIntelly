@@ -6,7 +6,7 @@ from PIL import Image
 
 # Initialize OpenAI client
 api_keys = [
-    "sk-proj-tHIcQ4jl30qvMr4kvhonT3BlbkFJ9lkVdMOrQindHOdUjsJq",
+    "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",
     # You can add more API keys here
 ]
 api_key = random.choice(api_keys)
