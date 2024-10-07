@@ -1,15 +1,15 @@
-from openai import OpenAI
 import streamlit as st
 import time
+import OpenAI
 import random
 from PIL import Image
 
 # Initialize OpenAI client
-api_keys = [
-    "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",
-    # You can add more API keys here
-]
+# 读取多个 API keys
+api_keys = st.secrets["OPENAI_API_KEYS"]
+# 随机选择一个 API key
 api_key = random.choice(api_keys)
+# 使用选中的 API key 初始化 OpenAI 客户端
 client = OpenAI(api_key=api_key)
 
 # Define available Assistants
